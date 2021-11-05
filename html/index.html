@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Jogo da velha</title>
+</head>
+<body>
+  <section class="conteiner-esquerda">
+    <div class="caixa-centro caixa-centro-esquerda">
+      <div class="embrulho-jogador">
+        <input type="text" placeholder="Jogador 1" class=" nome-jogador nome-jogador-1">
+        <div class="jogador-2">
+          <input type="text" placeholder="Jogador 2" class="nome-jogador nome-jogador-2">
+          <div class="switcher switcher-bot">
+            <div class="switcher-bola"></div>
+          </div>
+        </div>
+      </div>
+      <h2 class="sub-texto texto-MD">Tipo de partida</h2>
+      <div class="modo-de-jogo">
+        <span class="MD">Melhor de 3</span>
+        <div class="switcher switcher-bot">
+          <div class="switcher-bola"></div>
+        </div>
+        <span class="MD">Melhor de 5 </span>
+      </div>
+      <button class="botão botão-jogar">Jogar</button>
+      <h2 class="sub-texto sub-texto--histórico">Histórico de partidas</h2>
+      <ul class="caixa-histórico-partidas">
+        <li class="histórico-partidas">
+          <div class="vencedor">
+            <strong class="palavra-vencedor">Vencedor</strong>
+            <span class="nome-jogador-vencedor">primeiro quadrado</span>
+          </div>
+          <strong class="palavra-cenário">Cenário</strong>
+          <div class="mini-cenário">
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">O</span>
+            <span class="mini-campo">O</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">O</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">O</span>
+          </div>
+        </li>
+        <li class="histórico-partidas">
+          <div class="vencedor">
+            <strong class="palavra-vencedor">Vencedor</strong>
+            <span class="nome-jogador-vencedor">primeiro quadrado</span>
+          </div>
+          <strong class="palavra-cenário">Cenário</strong>
+          <div class="mini-cenário">
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">O</span>
+            <span class="mini-campo">O</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">O</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">X</span>
+            <span class="mini-campo">O</span>
+          </div>
+        </li>
+      </ul>
+      <button class="botão botão-reiniciar">Reiniciar</button>
+    </div>
+  </section>
+  <section class="conteiner-centro">
+    <div class="embrulho-placar">
+      <strong class="sub-texto texto-placar">Placar</strong>
+      <div class="embrulho-placar-jogador">
+        <span class="placar placar-1">00</span>
+        <span class="nome-do-ganhador">Jogador 1</span>
+        <span class="placar placar-2">00</span>
+      </div>
+    </div>
+    <div class="tabuleiro">
+      <span class="item-tabuleiro">X</span>
+      <span class="item-tabuleiro">X</span>
+      <span class="item-tabuleiro">O</span>
+      <span class="item-tabuleiro">O</span>
+      <span class="item-tabuleiro">O</span>
+      <span class="item-tabuleiro">O</span>
+      <span class="item-tabuleiro">X</span>
+      <span class="item-tabuleiro">X</span>
+      <span class="item-tabuleiro">X</span>
+    </div>
+  </section>
+
+  <section class="conteiner-direita">
+    <strong class="sub-texto texto-jogadas">Histórico de jogadas</strong>
+    <div class="caixa-centro-direita">
+    <ul class="embrulho-jogadas">
+      <li class="jogadas">
+        <strong class="jogada-atual">O</strong>
+        <div class="jogador-posição">
+          <span class=" jogada-atual-jogador">Jogador 1</span>
+          <span class="  posição-tabuleiro">primeiro quadrado</span>
+        </div>
+      </li>
+      <li class="jogadas">
+        <strong class="jogada-atual">O</strong>
+        <div class="jogador-posição">
+          <span class=" jogada-atual-jogador">Jogador 1</span>
+          <span class="  posição-tabuleiro">primeiro quadrado</span>
+        </div>
+      </li>
+      <li class="jogadas">
+        <strong class="jogada-atual">O</strong>
+        <div class="jogador-posição">
+          <span class=" jogada-atual-jogador">Jogador 1</span>
+          <span class="  posição-tabuleiro">primeiro quadrado</span>
+        </div>
+      </li>
+    </ul>
+    </div>
+    
+  </section>
+</body>
+<script src="/js/index.js"></script>
+</html>

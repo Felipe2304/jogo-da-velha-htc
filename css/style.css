@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+.conteiner-esquerda {
+  width: 28%;
+  background-color: #0097e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner-direita {
+  width: 28%;
+  background-color: #0097e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.conteiner-centro {
+  width: 44%;
+  background-color: #2ba9ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.caixa-centro {
+  max-width: 250px;
+}
+.embrulho-jogador {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.nome-jogador {
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+
+  padding-left: 5px;
+}
+
+.nome-jogador-1 {
+  margin-bottom: 10px;
+}
+.nome-jogador-1:focus {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.507);
+}
+
+.jogador-2 {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: fit-content;
+  border-radius: 10px;
+  padding-right: 4px;
+  border: 1px solid #ffffff;
+}
+.nome-jogador-2 {
+  width: calc(250px - 50px - 6px);
+}
+.jogador-2:focus-within {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.507);
+}
+
+.switcher {
+  height: 24px;
+  width: 50px;
+  background-color: #2ba9ea;
+  border-radius: 100px;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid #ffffff;
+}
+
+.switcher-bola {
+  background-color: #ffffff;
+  height: 18px;
+  width: 18px;
+  border-radius: 100px;
+  display: flex;
+  transition-duration: 300ms;
+}
+
+.switcher.ativo > .switcher-bola {
+  transform: translateX(26px);
+  background-color: #45f391;
+}
+.modo-de-jogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.sub-texto {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.sub-texto--histórico {
+  margin-bottom: 18px;
+}
+
+.texto-MD {
+  color: #45f391;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.MD {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.botão {
+  width: 250px;
+  height: 40px;
+  border: none;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
+  color: #0097e6;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botão-jogar {
+  background-color: #45f391;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.caixa-histórico-partidas {
+  max-height: 125px;
+  overflow: auto;
+
+  margin-bottom: 70px;
+}
+.histórico-partidas {
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.vencedor {
+  background-color: #ffffff;
+  padding: 7px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+
+.palavra-vencedor {
+  font-weight: 700;
+  font-size: 12px;
+  color: #45f391;
+  margin-bottom: 3px;
+}
+
+.nome-jogador-vencedor {
+  font-weight: 400;
+  font-size: 12px;
+  color: #828282;
+}
+.palavra-cenário {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 11px;
+}
+.mini-cenário {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 49px;
+  width: 49px;
+}
+.mini-campo {
+  height: 15px;
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #828282;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.embrulho-placar {
+  height: 100px;
+  min-width: 400px;
+  width: 66%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 11px 30px 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.embrulho-placar-jogador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.texto-placar {
+  color: #2ba9ea;
+  margin-bottom: 16px;
+}
+.placar {
+  font-weight: 700;
+  font-size: 40px;
+  color: #2ba9ea;
+}
+.nome-do-ganhador {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tabuleiro {
+  height: 440px;
+  width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-tabuleiro {
+  display: flex;
+  height: 140px;
+  width: 140px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 110px;
+  font-weight: 700;
+  color: #828282;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+  cursor: pointer;
+}
+.texto-jogadas{
+  margin-bottom: 25px;
+}
+.embrulho-jogadas{
+  height: 540px;
+  max-height: 540px;
+  overflow: auto;
+  
+}
+.caixa-centro-direita{
+  max-height: 540px;
+  max-width: 320px;
+  
+  
+}
+.jogadas{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 7px;
+  padding: 0 10px;
+  width: 310px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  
+}
+.jogada-atual{
+  font-size:44px ;
+  font-weight: 700;
+  color:#828282 ;
+  margin-right: 12px;
+}
+.jogador-posição{
+  display: flex;
+  flex-direction: column;
+}
+.jogada-atual-jogador{
+  font-size:14px ;
+  font-weight:700 ;
+  color:#828282 ;
+  margin-bottom: 6px;
+}
+.posição-tabuleiro{
+ font-size:14px ;
+ font-weight: 400;
+ color:#0097E6 ;
+}
