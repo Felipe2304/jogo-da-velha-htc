@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .conteiner-direita {
   width: 28%;
@@ -149,8 +150,9 @@
 
 .vencedor {
   background-color: #ffffff;
-  padding: 7px;
-  width: fit-content;
+  padding: 5px;
+  width: 120px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   border-radius: 7px;
@@ -183,9 +185,9 @@
 }
 .mini-campo {
   height: 15px;
-  width: fit-content;
+  width: 15px;
   background-color: #ffffff;
-  padding: 3px;
+  padding: 2px;
   font-size: 12px;
   font-weight: 700;
   color: #828282;
@@ -253,7 +255,7 @@
 .texto-jogadas{
   margin-bottom: 25px;
 }
-.embrulho-jogadas{
+.movimento-jogadas{
   height: 540px;
   max-height: 540px;
   overflow: auto;
@@ -297,4 +299,20 @@
  font-size:14px ;
  font-weight: 400;
  color:#0097E6 ;
+}
+
+.linha-destaque{
+  color: #45f391;
+}
+
+.botão-ativado{
+  background-color: red;
+  color: #ffffff;
+  transition-duration: 300ms;
+}
+.botão-ativado:hover{
+  
+  background-color: transparent;
+  border: 2px solid red ;
+  color: red;
 }
